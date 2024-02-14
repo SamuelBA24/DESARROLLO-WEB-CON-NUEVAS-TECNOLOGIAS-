@@ -1,0 +1,72 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+html{
+    font-size: 30px;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0, 0, 0);
+}
+
+.profile{
+    background-color: rgb(255, 43, 5);
+    padding: 30px;
+    border-radius: 20px;
+    
+}
+
+.profile__avatar{
+    border-radius: 90%;
+    height: 100px;
+    width: 100px; 
+    
+}
+.profile__name{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: smaller;
+    color: black;
+    text-align: center;
+
+}
+
+.profile__city{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: smaller;
+    color: black;
+    text-align: center;
+}
+
+.profile__description{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: smaller;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+section button >p{
+    font-size: 60px;
+}
+
+section button:first-child{
+    background-color: rgb(255, 255, 255);
+}
+
+button{
+    border-radius: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
