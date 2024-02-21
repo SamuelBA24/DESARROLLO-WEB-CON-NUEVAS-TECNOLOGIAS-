@@ -1,0 +1,168 @@
+img{
+    width: 170px;
+}
+nav{
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    padding: 1px;
+    margin: top 1px;
+}
+nav ul{
+    list-style-type:none;
+    padding:0;
+    display:flex;
+    
+}
+nav ul li{
+    margin:0,20px;
+}
+
+nav ul li a{
+    color:rgb(0, 0, 0);
+    text-decoration: none;
+    padding:0.5px 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav ul li a:hover{
+    background-color:transparent;
+    color: darkred;
+}
+
+.carousel {
+    display: flex;
+    overflow: hidden;
+    width: 100vw;
+    height: 500px;
+  }
+  
+  .carousel img {
+    width: 100%;
+    animation: carousel 160s infinite;
+  }
+  
+  @keyframes carousel {
+    0% { transform: translateX(0); }
+    20% { transform: translateX(-100%); }
+    40% { transform: translateX(-200%); }
+    60% { transform: translateX(-300%); }
+    80% { transform: translateX(-400%); }
+    100% { transform: translateX(-500%); }
+  }
+
+  .button-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 30px;
+}
+
+.cotizar-button{
+    background-color: rgb(150, 27, 27);
+    color: white;
+    border: none;
+    padding: 20px 20px;
+    border-radius:  19px;
+    border-width: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: -550px; /* Cambia este valor para subir o bajar el botón */
+    font-size:18px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.cotizar-button:hover{
+    background-color: grey;
+}
+
+h1{
+    font-family: Arial, sans-serif; /* Ajusta esto a la fuente que desees */
+    font-size: 2em; /* Ajusta esto al tamaño que desees */
+    font-weight: bold;
+    color: rgb(52, 38, 38);
+    text-align: center; /* Centra el texto horizontalmente */
+    display: flex; /* Centra el texto verticalmente */
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ajusta esto a la altura que desees */
+    margin-top: -750px;
+}
+
+image-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    margin-top: -250px;
+    gap: -1500px;
+}
+
+image-container img {
+    width: 90%;
+    height: 90%;
+    object-fit: contain; /* Cambiado a 'contain' para mostrar completamente la imagen */
+}
+
+h2
+{
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    line-height: 1.1;
+    color: inherit;
+    overflow-wrap: break-word;
+}
+
+h4{
+    text-align: center;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family:sans-serif;
+    font-weight: 500;
+    line-height: 1.1;
+    overflow-wrap: break-word;
+    box-sizing: border-box;
+    text-decoration: none;
+    color:inherit;
+    
+}
+.carrousel {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth; /* Añade un desplazamiento suave */
+    
+    
+}
+
+.item {
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    width: 300px; /* Ajusta el ancho según tus necesidades */
+    margin-right: 10px; /* Espacio entre elementos */
+    text-align: center;
+}
+
+.item img {
+    width: 90%;
+    height: auto;
+}
+
+.item p {
+    text-align: center;
+}
+
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(calc(-100% * 4)); } /* Ajusta el número de elementos en el carrusel */
+}
+
+
