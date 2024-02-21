@@ -1,2 +1,2 @@
 CLASE #2
-En este repositorio estará disponible la actividad que se realizaró en clase el 14/02/2024
+En este repositorio estará disponible la actividad que se realizó en clase y adicionalmente el clon de  la  pagina  web  en este caso toyota
